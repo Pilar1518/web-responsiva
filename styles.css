@@ -1,0 +1,107 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+header {
+background: linear-gradient(45deg, rgb(79, 179, 236), rgb(149, 235, 238));
+  color: white;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.presntacion {
+  align-items: center;
+  padding: 20px;
+
+}
+.presntacion img {
+  width: 20%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px;
+margin-bottom: 20px;
+}
+.presntacion h2{
+    color: #2a68a5;
+}
+.btn-accion{
+    padding: 15px 30px;
+   background: linear-gradient(45deg, rgb(113, 224, 243), rgb(176, 80, 255));
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px black;
+    transition: background 0.03s, transform 0.03s;
+}
+.btn-accion:hover{
+    background: linear-gradient(45deg, rgb(206, 113, 243), rgb(80, 191, 255));
+    transform: scale(1.1);
+}
+.galeria{
+    padding: 20px;
+    text-align: center;
+}
+.galeria h2{
+    margin-bottom: 20px;
+    color: brown;
+}
+.imagenes{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.imagenes img{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12px;
+    transition: transform 0.03s, box-shadow 0.3s;
+}
+.imagenes img:hover{
+    transform:scale(1.15) ;
+    box-shadow: 0 8px 20px black;
+}
+
+footer{
+    background: linear-gradient(45deg, rgb(206, 113, 243), rgb(80, 191, 255));
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+
+}
+.redes{
+    margin: 10px 0;
+}
+.redes a{
+    font-size: 28px;
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+.redes a:hover{
+    transform: scale(1.2);
+    color: rgb(87, 43, 168);
+}
+@media (min-width: 768px) {
+    .presntacion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+        text-align: left;
+        padding: 40px;
+    }
+    .presntacion img{
+        margin-bottom: 0;
+    }
+    
+}
